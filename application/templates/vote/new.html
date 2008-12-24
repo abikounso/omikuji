@@ -1,0 +1,21 @@
+{% extends "../base.html" %}
+
+{% block title %}投票所{% endblock %}
+
+{% block content %}
+    <h1>投票所</h1>
+    <form action="/vote/create" method="post">
+        <p id="notice">{{ notice }}</p>
+        <p>氏名: <input type="text" name="name" value="{{ name }}"></p>
+        <p>
+            最も良かったチームは？:<br />
+            <input type="radio" name="type" value="1">TEAM TOMONAGA<br />
+            <input type="radio" name="type" value="2">初々（ウィウィ）<br />
+            <input type="radio" name="type" value="3">UPTV<br />
+            <input type="radio" name="type" value="4">プリンセス☆キーマー<br />
+            <input type="radio" name="type" value="5">悲愴感<br />
+            <input type="radio" name="type" value="6">チーム前橋<br />
+        </p>
+        <p><input type="submit" value="投票"></p>
+    </form>
+{% endblock %}

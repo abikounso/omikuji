@@ -1,0 +1,19 @@
+{% extends "../base.html" %}
+
+{% block title %}投票者一覧{% endblock %}
+
+{% block content %}
+    <h1>投票者一覧</h1>
+    <a href="/admin/show">集計結果を見る</a>
+    <a href="/admin/destroy">クリア</a>
+    <!--<input type="button" value="クリア" onClick="location.href='/admin/destroy'" />-->
+
+    <table>
+        {% for rec in result %}
+            <tr>
+                <td>{{ rec.name }}</td>
+                <td>{{ rec.type }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

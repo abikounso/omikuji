@@ -1,0 +1,17 @@
+{% extends "../base.html" %}
+
+{% block title %}集計結果{% endblock %}
+
+{% block content %}
+    <h1>集計結果</h1>
+    <a href="/admin">投票者一覧へ戻る</a>
+    <table>
+        {% for sum in summary %}
+            <tr>
+                {% for s in sum %}
+                    <td>{{ s }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </ul>
+{% endblock %}
