@@ -105,8 +105,8 @@ class Router:
     class __impl:
         def __init__(self):
             self.__routing_root = {
-                'controller': 'omikuji',
-                'action': 'index',
+                'controller': 'vote',
+                'action': 'new',
             }
             self.__routing_table = []
             # used to store default pattern (but match last)

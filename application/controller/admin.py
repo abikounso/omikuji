@@ -18,7 +18,7 @@ class AdminController(BaseController):
         self.result = query
 
     def show(self):
-        labels = ['TEAM TOMONAGA', '初々（ウィウィ）', 'UPTV', 'プリンセス☆キーマー', '悲愴感', 'チーム前橋']
+        labels = ['日本舞踊', '空手部', 'チームパートタイマーの栄光', 'ルーキーズ', '銀河鉄道', 'チョッキーズ']
         summary = []
         for i in range(len(labels)):
             set = [labels[i]]
